@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    padding: '1rem',
+                    screens: {
+                        xl: '1228px'
+                    },
+                    center: true,
+                },
+                borderWidth: {
+                    DEFAULT: '1px',
+                    '0': '0',
+                    '2': '2px',
+                    '3': '3px',
+                    '4': '4px',
+                    '6': '6px',
+                    '8': '8px',
+                },
+
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .active {
+            right: 0 !important;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F3F4F6] font-[Poppins]">
+    <header class="bg-white">
+        <div class="container">
+            <div class="nav flex justify-between p-3">
+                <img class="h-5 w-20" src="/img/Netflix_2015_logo 1.png" alt="">
+                <div
+                    class="side-bar text-base font-medium  block bg-white h-screen w-[280px] md:w-auto p-7 fixed top-0 -right-full transition-all duration-500 ease-in-out md:p-0 md:h-auto md:flex md:max-w-full md:static md:bg-transparent">
+                    <ul class="relative md:flex gap-[30px]">
+                        <li><a href="" class="py-2.5 md:py-0 inline-block">Home</a></li>
+                        <li><a href="" class="py-2.5 md:py-0 inline-block">Navigate</a></li>
+                        <li><a href="" class="py-2.5 md:py-0 inline-block">Services</a></li>
+                        <li><a href="" class="py-2.5 md:py-0 inline-block">About us</a></li>
+                        <li><a href="" class="py-2.5 md:py-0 inline-block">Contact us</a></li>
+                        <li class="md:hidden absolute -top-3 -right-3"><button class="close"><img src="/img/close.png"
+                                    width="20" height="20" alt="menu"></button></li>
+                    </ul>
+
+                </div>
+                <button class="md:hidden open-menu"><img src="/img/hamburger.png" width="20" height="20"
+                        alt="menu"></button>
+            </div>
+        </div>
+    </header>
+    <div class="first-section">
+        <div class="container">
+            <div class="block md:flex items-center">
+                <div class="md:w-2/4 w-full sm:overflow-hidden p-5 md:p-0">
+                    <h1 class="md:font-semibold font-medium md:text-5xl text-2xl md:mt-12 mb-6">This is my home page</h1>
+
+                    <div class="font-normal text-base mb-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                    <div>
+                        <button
+                            class="bg-[#304BDA] md:w-40 w-full  text-center text-[#FFFFFF] rounded-lg items-center font-semibold py-2.5 text-[22px] leading-8">Contact
+                            us</button>
+                    </div>
+                </div>
+                <div class="md:w-2/4 w-full">
+                    <img class="md:mt-12 w-full p-3 md:p-0 " src="/img/image 1.png" alt="">
+                </div>
+            </div>
+            <div class="block md:flex justify-center items-center gap-12 mt-9 p-4 md:p-0">
+                <div>
+                    <img class="w-16 h-16 mb-2.5" src="/img/school.png" alt="">
+                    <h5 class="font-medium mb-2.5 md:text-xl text-2xl text-[#000000 ]">Latest technology</h5>
+                    <p class="text-base	font-normal	mb-5 md:mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div>
+                    <img class="w-16 h-16 mb-2.5" src="/img/workplace.png" alt="">
+                    <h5 class="font-medium mb-2.5 md:text-xl text-2xl text-[#000000]">Information Idea</h5>
+                    <p class="text-base	font-normal	mb-5 md:mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div>
+                    <img class="w-16 h-16 mb-2.5" src="/img/rocket.png" alt="">
+                    <h5 class="font-medium mb-2.5 md:text-xl text-2xl text-[#000000]">Satrtup Based Info</h5>
+                    <p class="text-base	font-normal	mb-5 md:mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div>
+                    <img class="w-16 h-16 mb-2.5" src="/img/phone.png" alt="">
+                    <h5 class="font-medium mb-2.5 md:text-xl text-2xl text-[#000000]">Contact a Person</h5>
+                    <p class="text-base	font-normal	">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+
+            </div>
+            <div class="block md:flex items-center gap-8 mt-4 md:mt-0">
+                <div class="md:w-2/4 w-full p-3 md:p-0">
+                    <img class="md:mt-12" src="/img/image 2.png" alt="">
+                </div>
+                <div class="md:w-2/4 w-full p-4 md:p-0">
+                    <div class="md:font-semibold font-bold md:text-5xl text-4xl md:mt-12 mb-6">
+                        <h1>Our bycycle <span class="text-[#F51E1E]"> Showroom</span></h1>
+                    </div>
+                    <div class="font-normal text-base md:mb-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex md:flex-row flex-col flex-col-reverse md:mb-12 mt-4 md:mt-0 md:items-center">
+                <div class="md:mt-10 md:w-2/4 w-full p-4 md:p-0">
+                    <h1 class="md:font-semibold font-bold md:text-5xl text-4xl md:mt-12 mb-6">Lock <span class="text-[#F51E1E]">Setup</span> for cycle</h1>
+                    <div class="font-normal text-base  text-[#000000] mb-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                    <div>
+                        <button
+                            class="bg-[#304BDA] md:w-40 w-full text-center text-[#FFFFFF] rounded-lg items-center font-semibold py-2.5 text-[22px] leading-8">Contact
+                            us</button>
+                    </div>
+                </div>
+                <div class="md:w-2/4 w-full p-3 md:p-0">
+                    <img class="md:mt-12 md:w-full" src="/img/image 3.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="bg-[#111827]">
+        <div class="container">
+            <div class="block md:flex lg:px-7 py-12 justify-between border-b border-solid border-[#374151] mb-5">
+                <div class="mb-16 md:mb-0">
+                    <div><img class="mb-8" src="/img/Netflix_2015_logo 1.png" alt=""></div>
+                    <div>
+                        <p class=" mb-8 text-[#FFFFFF]"><a href="">Green Colony, National Highway no. 3 <br> Dhule ,
+                                Maharashtra,
+                                India</a></p>
+                    </div>
+                    <div>
+                        <p class=" mb-8 text-[#FFFFFF]"><a href="">Mobile :- +919876543210</a></p>
+                    </div>
+                    <div>
+                        <p class="mb-8 text-[#FFFFFF]"><a href="">Email :- sample@example.com</a></p>
+                    </div>
+                </div>
+                <div class="mb-16 md:mb-0">
+                    <p class="mb-5 text-[#FFFFFF]">Navigation</p>
+                    <ul class="text-[#CDCED0]/40 text-[18px] leading-8 font-normal">
+                        <li class="mb-3 md:mb-5 hover:text-white"><a href="">Home</a></li>
+                        <li class="mb-3 md:mb-5 hover:text-white"><a href="">About us</a></li>
+                        <li class="mb-3 md:mb-5 hover:text-white"><a href="">Contact us</a></li>
+                        <li class="mb-3 md:mb-5 hover:text-white"><a href="">Services</a></li>
+                        <li class="mb-3 md:mb-5 hover:text-white"><a href="">Navigate</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <p class="mb-8 text-[#FFFFFF]">Subscribe</p>
+                    <div class="my-5"><input
+                            class="md:w-60 w-full h-9 border-none outline-none rounded-[10px] px-2 text-[#111827] bg-[#CDCED0] text-base leading-8 font-normal"
+                            type="text" placeholder="Enter name">
+                    </div>
+
+                    <div class="my-5">
+                        <input
+                            class="md:w-60 w-full h-9 border-none outline-none rounded-[10px] px-2 text-[#111827] bg-[#CDCED0] text-base leading-8 font-normal"
+                            type="text" placeholder="Enter email.....">
+                    </div>
+                    <div class="my-5 bg-[#F51E1E] text-center rounded-[10px] py-1.5 text-[#FFFFFF]">
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="block md:flex justify-between text-[#CDCED0] text-lg leading-8 font-normal mx-2.5 pb-[15px] p-3 md:p-0">
+                <p>Netflix. All Rights Reserved</p>
+                <div class="block md:flex md:gap-12">
+                    <a href="">Terms and Condition</a>
+                    <div>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <script>
+        document.querySelector('.open-menu').addEventListener('click', function () {
+            console.log("check")
+            document.querySelector('.side-bar').classList.add('active');
+            this.classList.add('active')
+        });
+
+        document.querySelector('.close').addEventListener('click', function () {
+            console.log("check")
+            document.querySelector('.side-bar').classList.remove('active');
+            this.classList.remove('active')
+        })
+
+    </script>
+</body>
+
+</html>
